@@ -31,7 +31,7 @@ export default {
       const locations = Object.keys(studentsGroupedByStatus).map((status, index) =>
           ({
               title: status,
-              hexColor: colors[index % colors.length],
+              hexColor: colors[index % (colors.length - 1)],
               students: studentsGroupedByStatus[status]
           })
       );
